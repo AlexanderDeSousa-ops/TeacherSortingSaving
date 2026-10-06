@@ -1,0 +1,106 @@
+﻿using System;
+
+namespace March11Informative
+{// march 10 & march 4 for arrays interface
+    class Program
+    {
+        public static void Main(string[] args)
+        {
+            try
+            {
+                Employee[] employee = new Employee[4] {
+                new Professor(1, "Alexander Smith", 50000, 12, 20000),
+                new Professor(2, "Phill Johnson", 45000, 8, 15000),
+                new Administrator(3, "Kevin Davis", 40000, 30, 50),
+                new Administrator(4, "Andrew Brown", 38000, 15, 40),
+                };
+                Professor p1 = new Professor(1, "Marco Daniel", 50000, 12, 20000);
+                Professor p2 = new Professor(p1);
+
+                string performanceLevel = GetProformanceLevel(employee); // error
+
+                foreach (Employee employees in employee)
+                {
+                    employees.DisplayInfo();
+                    Console.WriteLine("Performance Level: " + performanceLevel);
+
+                }
+
+                double totalPayroll = CalculateTotalPayroll(employee);
+
+                Console.WriteLine("Total Payroll: " + totalPayroll);
+                Employee highestPaid = FindHighestPaid(employee);
+
+                Console.WriteLine("Highest Paid Employee: " + highestPaid.GetName() + " with Salary: " + highestPaid.CalculateSalary());
+                SortEmployeesBySalary(employee);
+
+                Console.WriteLine("Employees sorted by salary:");
+
+                foreach (Employee employees in employee)
+                {
+                    Console.WriteLine(employees.GetName() + ": " + employees.CalculateSalary());
+                }
+
+            }
+            catch (FormatException ex)
+            {
+                Console.WriteLine("Formating Error: " + ex.Message);
+            }
+            catch(ArgumentException ex)
+            {
+                Console.WriteLine("Argument Error: " + ex.Message);
+            }
+            catch(NullReferenceException ex)
+            {
+                Console.WriteLine("Null Error: " + ex.Message);
+            }
+            catch(OverflowException ex)
+            {
+                Console.WriteLine("OverFlow Error: " + ex.Message);
+            }
+        }
+        public static double CalculateTotalPayroll(Employee[] employees)
+        {
+            double totalSalary = 0;
+            foreach (Employee employee in employees)
+            {
+                if (employee != null)
+                {
+                    totalSalary += employee.CalculateSalary();
+                }
+            }
+            return totalSalary;
+        }
+        public static Employee FindHighestPaid(Employee[] employees)
+        {
+            Employee highestPaid = employees[0];
+            double highestSalary = 0;
+            foreach (Employee employee in employees)
+            {
+                double salary = employee.CalculateSalary();
+                if (salary > highestSalary)
+                {
+                    highestSalary = salary;
+                    highestPaid = employee;
+                }
+            }
+            return highestPaid;
+        }
+        public static void SortEmployeesBySalary(Employee[] employees)
+        {
+            for (int i = 0; i < employees.Length - 1; i++)
+            {
+                for (int j = 0; j < employees.Length - i - 1; j++)
+                {
+                    if (employees[j].CalculateSalary() < employees[j + 1].CalculateSalary())
+                    {
+                        Employee temp = employees[j];
+                        employees[j] = employees[j + 1];
+                        employees[j + 1] = temp;
+                    }
+                }
+            }
+        }
+    }
+}
+

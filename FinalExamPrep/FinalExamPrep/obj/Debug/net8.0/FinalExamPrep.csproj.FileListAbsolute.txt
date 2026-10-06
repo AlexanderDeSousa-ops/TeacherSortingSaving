@@ -1,0 +1,14 @@
+C:\Users\thega\Documents\Object Oriented Programming\FinalExamPrep\FinalExamPrep\bin\Debug\net8.0\FinalExamPrep.exe
+C:\Users\thega\Documents\Object Oriented Programming\FinalExamPrep\FinalExamPrep\bin\Debug\net8.0\FinalExamPrep.deps.json
+C:\Users\thega\Documents\Object Oriented Programming\FinalExamPrep\FinalExamPrep\bin\Debug\net8.0\FinalExamPrep.runtimeconfig.json
+C:\Users\thega\Documents\Object Oriented Programming\FinalExamPrep\FinalExamPrep\bin\Debug\net8.0\FinalExamPrep.dll
+C:\Users\thega\Documents\Object Oriented Programming\FinalExamPrep\FinalExamPrep\bin\Debug\net8.0\FinalExamPrep.pdb
+C:\Users\thega\Documents\Object Oriented Programming\FinalExamPrep\FinalExamPrep\obj\Debug\net8.0\FinalExamPrep.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\thega\Documents\Object Oriented Programming\FinalExamPrep\FinalExamPrep\obj\Debug\net8.0\FinalExamPrep.AssemblyInfoInputs.cache
+C:\Users\thega\Documents\Object Oriented Programming\FinalExamPrep\FinalExamPrep\obj\Debug\net8.0\FinalExamPrep.AssemblyInfo.cs
+C:\Users\thega\Documents\Object Oriented Programming\FinalExamPrep\FinalExamPrep\obj\Debug\net8.0\FinalExamPrep.csproj.CoreCompileInputs.cache
+C:\Users\thega\Documents\Object Oriented Programming\FinalExamPrep\FinalExamPrep\obj\Debug\net8.0\FinalExamPrep.dll
+C:\Users\thega\Documents\Object Oriented Programming\FinalExamPrep\FinalExamPrep\obj\Debug\net8.0\refint\FinalExamPrep.dll
+C:\Users\thega\Documents\Object Oriented Programming\FinalExamPrep\FinalExamPrep\obj\Debug\net8.0\FinalExamPrep.pdb
+C:\Users\thega\Documents\Object Oriented Programming\FinalExamPrep\FinalExamPrep\obj\Debug\net8.0\FinalExamPrep.genruntimeconfig.cache
+C:\Users\thega\Documents\Object Oriented Programming\FinalExamPrep\FinalExamPrep\obj\Debug\net8.0\ref\FinalExamPrep.dll
